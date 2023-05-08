@@ -1,0 +1,21 @@
+.container {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+.btn {
+display: block;
+margin: auto;
+margin-top: 15px;
+width: 250px;
+height: 40px;
+background-color: rgb(146, 105, 164);
+color: white;
+font-size: 15px;
+}
+.output {
+    border: 1px black solid;
+    width: 250px;
+    height: 40px;
+    padding: 10px 30px;
+}
