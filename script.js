@@ -9,6 +9,11 @@ let contScore = document.querySelector(".containerScore");
 let contLast = document.querySelector(".containerLast");
 let correct = document.querySelectorAll(".correct");
 let incorrect = document.querySelectorAll(".incorrect");
+let problemTwo = document.querySelector(".questionTwo");
+let problemThree = document.querySelector(".questionThree");
+let problemFour = document.querySelector(".questionFour");
+let problemFive = document.querySelector(".questionFive");
+let scoreboard = document.querySelector(".scoreboard");
 
 startButton.addEventListener("click", startQuiz);
 
@@ -17,6 +22,10 @@ function startQuiz() {
     contStart.style.display="none";
 
     correctAnswer()
+    // problemTwo.addEventListener("click", setTimeout(questionTwo, 1000));
+    problemTwo.forEach(problemTwo=>{
+        problemTwo.addEventListener("click", setTimeout(questionTwo, 1000))
+    })
 }
 
 function correctAnswer() {
@@ -33,6 +42,7 @@ function questionTwo(){
     contStart.style.display="none";
     contOne.style.display="none";
     contTwo.style.display="block";
+// problemThree.addEventListener("click", setTimeout(questionThree, 1000));
 }
 function questionThree(){
     contStart.style.display="none";
