@@ -9,49 +9,66 @@
 </head>
 <body>
     
-    <div class="container">
+    <div class="containerMain">
         <!-- first page-->
-        <h1> Coding Quiz Challenge</h1>
+        <p class="time">Time:<span id="timer"></span></p>
+        <br>
+        <div class="containerStart"><h1 id="title"> Coding Quiz Challenge</h1>
         <h2>Try to answer the following code related questions within the time limit. Keep in mind that incorrect answers will deduct your time by 10 seconds.</h2>
         <button class="startBtn"> Start Quiz</button>
+        </div>
         <!-- second page-->
+        <div class="containerOne">
     <h2 id="question1"> question 1</h2>
-        <button class="btn"> answer 1</button>
-        <button class="btn"> answer 2</button>
-        <button class="btn"> answer 3</button>
-        <button class="btn"> answer 4</button>
+        <button class="btn correct" > answer 1</button>
+        <button class="btn incorrect"> answer 2</button>
+        <button class="btn incorrect"> answer 3</button>
+        <button class="btn incorrect"> answer 4</button>
+        </div>
         <!-- third page-->
+        <div class="containerTwo">
     <h2 id="question2"> question 2</h2>
-        <button class="btn"> answer 1</button>
-        <button class="btn"> answer 2</button>
-        <button class="btn"> answer 3</button>
-        <button class="btn"> answer 4</button>
+        <button class="btn incorrect"> answer 1</button>
+        <button class="btn incorrect"> answer 2</button>
+        <button class="btn correct"> answer 3</button>
+        <button class="btn incorrect"> answer 4</button>
+        </div>
         <!-- fourth page-->
+        <div class="containerThree">
     <h2 id="question3"> question 3</h2>
-        <button class="btn"> answer 1</button>
-        <button class="btn"> answer 2</button>
-        <button class="btn"> answer 3</button>
-        <button class="btn"> answer 4</button>
+        <button class="btn incorrect"> answer 1</button>
+        <button class="btn incorrect"> answer 2</button>
+        <button class="btn incorrect"> answer 3</button>
+        <button class="btn correct"> answer 4</button>
+        </div>
         <!-- fifth page-->
+        <div class="containerFour">
     <h2 id="question4"> question 4</h2>
-        <button class="btn"> answer 1</button>
-        <button class="btn"> answer 2</button>
-        <button class="btn"> answer 3</button>
-        <button class="btn"> answer 4</button>
+        <button class="btn incorrect"> answer 1</button>
+        <button class="btn correct"> answer 2</button>
+        <button class="btn incorrect"> answer 3</button>
+        <button class="btn incorrect"> answer 4</button>
+        </div>
         <!-- sixth page-->
+        <div class="containerFive">
     <h2 id="question5"> question 5</h2>
-        <button class="btn"> answer 1</button>
-        <button class="btn"> answer 2</button>
-        <button class="btn"> answer 3</button>
-        <button class="btn"> answer 4</button>
+        <button class="btn correct"> answer 1</button>
+        <button class="btn incorrect"> answer 2</button>
+        <button class="btn incorrect"> answer 3</button>
+        <button class="btn incorrect"> answer 4</button>
+        </div>
         <!-- seventh page-->
+        <div class="containerScore">
         <h1> All Done!</h1>
         <h3> Your final score is <span id="score"> </span></h3>
         <form>
             <label for="initials"> Enter Initials: </label>
             <input type="text" id="initials" name="initails">
+            <input type="submit" value="Submit">
         </form>
+        </div>
         <!-- eight page-->
+        <div class="containerLast">
         <h1> High Scores:</h1>
         <form>
         <output name="x" for="initials" class="output"> </output>
@@ -60,5 +77,7 @@
         <button class="startBtn" id="goBack"> Go Back</button>
         <button class="startBtn" id="clearScore">Clear high scores</button>
     </div>
+    </div>
+<script src="/script.js"></script>
 </body>
 </html>

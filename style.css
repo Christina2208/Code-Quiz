@@ -1,4 +1,4 @@
-.container {
+.containerMain {
     width: 70%;
     margin: 0 auto;
     text-align: center;
@@ -18,4 +18,34 @@ font-size: 15px;
     width: 250px;
     height: 40px;
     padding: 10px 30px;
+}
+.time{
+    float: right;
+}
+#title{
+    margin-top: 75px;
+}
+/* .containerStart{
+    margin-top: 250px;
+} */
+.containerOne{
+    display:none;
+}
+.containerTwo{
+    display:none;
+}
+.containerThree{
+    display:none;
+}
+.containerFour{
+    display:none;
+}
+.containerFive{
+    display:none;
+}
+.containerScore{
+    display:none;
+}
+.containerLast{
+    display:none;
 }
