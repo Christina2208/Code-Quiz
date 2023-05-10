@@ -14,15 +14,45 @@ let problemTwo = document.querySelectorAll(".questionTwo");
 let problemThree = document.querySelectorAll(".questionThree");
 let problemFour = document.querySelectorAll(".questionFour");
 let problemFive = document.querySelectorAll(".questionFive");
+let clearTime = document.querySelectorAll(".questionFive");
 let scoreboard = document.querySelector(".scoreboard");
 
 startButton.addEventListener("click", startQuiz);
-
+startButton.addEventListener("click", timer);
 function startQuiz() {
     contOne.style.display="block"; 
     contStart.style.display="none";
 
     correctAnswer()
+}
+
+// timer function
+function timer(){
+let sec = 75;
+let timer;
+
+function startTimer(){
+    timer=setInterval(function(){
+        document.querySelector("#timer").innerHTML=sec;
+        sec--;
+        if (sec === 0){
+            clearInterval(timer);
+            document.querySelector("#timer").innerHTML=sec+" out of time"
+        }
+    },1000)
+}
+//incorrect answer decreases time by 10 seconds
+incorrect.forEach(incorrect=>{
+    incorrect.addEventListener("click", ()=>{
+        sec-=10;
+        document.querySelector("#timer").innerHTML=sec;
+    })
+})
+//stops timer after questions are done
+clearTime.forEach(clearTime=>{
+    clearTime.addEventListener("click", ()=>{clearInterval(timer)})
+})
+startTimer();
 }
 
 function correctAnswer() {
