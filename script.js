@@ -64,6 +64,7 @@ function scoreTimer(){
             document.querySelector("#timer").innerHTML=sec+" out of time"
         }
     },1000)
+    
     }
     //incorrect answer decreases time by 10 seconds
     incorrect.forEach(incorrect=>{
@@ -92,7 +93,21 @@ correct.forEach(correct=> {
 problemOne.forEach(problemOne=>{
     problemOne.addEventListener("click", function(){setTimeout(questionTwo, 1000);})
 })
+// handlerFunc()
 }
+// trying to remove eventListners so it doesnt double the penalty time + keeps colors 
+
+// function handlerFunc(){
+// incorrect.forEach(incorrect=>{
+//     incorrect.removeEventListener("click", correctAnswer);
+// })
+// correct.forEach(correct=>{
+//     correct.removeEventListener("click", correctAnswer);
+// })
+// incorrect.forEach(incorrect=>{
+//     incorrect.removeEventListener("click", scoreTimer);
+// })
+// }
 
 function questionTwo(){
     contStart.style.display="none";
