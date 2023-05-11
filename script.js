@@ -16,9 +16,35 @@ let problemFour = document.querySelectorAll(".questionFour");
 let problemFive = document.querySelectorAll(".questionFive");
 let clearTime = document.querySelectorAll(".questionFive");
 let scoreboard = document.querySelector(".scoreboard");
+let sec = 75;
+let timer;
+let submitBtn = document.querySelector("#submitBtn");
+let init = document.querySelector("#initials");
+let showOutput = document.querySelector("#showOutput");
+let clearScore = document.querySelector("#clearScore");
+let highScore = document.querySelector("#highScore");
+
 
 startButton.addEventListener("click", startQuiz);
-startButton.addEventListener("click", timer);
+startButton.addEventListener("click", scoreTimer);
+
+function startGame(){
+    contStart.style.display="block";
+    contLast.style.display="none";
+    highScore.innerHTML=init.value+" "+sec;
+    if (sec < 75){
+        sec = 75
+    };
+}
+function startGame1(){
+    contStart.style.display="block";
+    contLast.style.display="none";
+    highScore.innerHTML="";
+    if (sec < 75){
+        sec = 75
+    };
+}
+
 function startQuiz() {
     contOne.style.display="block"; 
     contStart.style.display="none";
@@ -27,11 +53,9 @@ function startQuiz() {
 }
 
 // timer function
-function timer(){
-let sec = 75;
-let timer;
+function scoreTimer(){
 
-function startTimer(){
+    function startTimer(){
     timer=setInterval(function(){
         document.querySelector("#timer").innerHTML=sec;
         sec--;
@@ -40,19 +64,19 @@ function startTimer(){
             document.querySelector("#timer").innerHTML=sec+" out of time"
         }
     },1000)
-}
-//incorrect answer decreases time by 10 seconds
-incorrect.forEach(incorrect=>{
+    }
+    //incorrect answer decreases time by 10 seconds
+    incorrect.forEach(incorrect=>{
     incorrect.addEventListener("click", ()=>{
         sec-=10;
         document.querySelector("#timer").innerHTML=sec;
     })
-})
-//stops timer after questions are done
-clearTime.forEach(clearTime=>{
+    })
+    //stops timer after questions are done
+    clearTime.forEach(clearTime=>{
     clearTime.addEventListener("click", ()=>{clearInterval(timer)})
-})
-startTimer();
+    })
+    startTimer();
 }
 
 function correctAnswer() {
@@ -124,6 +148,8 @@ function score(){
     contFour.style.display="none";
     contFive.style.display="none";  
     contScore.style.display="block";
+    submitBtn.addEventListener("click", last);
+
 }
 
 function last(){
@@ -135,4 +161,10 @@ function last(){
     contFive.style.display="none";  
     contScore.style.display="none";
     contLast.style.display="block";
+    showOutput.innerHTML=init.value+" "+sec;
+    document.querySelector("#goBack").addEventListener("click", startGame)
+    clearScore.addEventListener("click", ()=>{
+        showOutput.innerHTML=""
+    });
+    clearScore.addEventListener("click", startGame1);
 }
