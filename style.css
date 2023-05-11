@@ -19,6 +19,10 @@ font-size: 15px;
     height: 40px;
     padding: 10px 30px;
 }
+.highScore{
+    float: left;
+    margin: 30px;
+}
 .time{
     float: right;
 }
