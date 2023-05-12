@@ -17,21 +17,15 @@ To install, just click on the deployment link.
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+To use this website, you must clock on the deployment link, then click on the Start Quiz button. From there, your coding knowledge will be put to the test so click on the button you think the correct answer is. At the end, input your initials and click on the submit button. Your highscore will now be saved!
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![ScreenShot](https://github.com/Christina2208/Code-Quiz/blob/main/assets/images/code%20quiz%20ss.png)
-    ```
+![ScreenShot](https://github.com/Christina2208/Code-Quiz/blob/main/assets/images/code%20quiz%20ss.png)
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
+https://www.w3schools.com/html/html_form_elements.asp
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_submit
 
 ## License
 
