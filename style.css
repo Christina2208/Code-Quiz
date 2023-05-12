@@ -3,6 +3,9 @@
     margin: 0 auto;
     text-align: center;
 }
+.startBtn{
+    margin-top:10px;
+}
 .btn {
 display: block;
 margin: auto;
@@ -52,4 +55,6 @@ font-size: 15px;
 }
 .containerLast{
     display:none;
+    text-align: center;
+    margin: 0 auto;
 }

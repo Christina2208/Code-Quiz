@@ -1,4 +1,4 @@
-let startButton = document.querySelector(".startBtn");
+let startButton = document.querySelector("#startBtn");
 let contStart = document.querySelector(".containerStart");
 let contOne = document.querySelector(".containerOne");
 let contTwo = document.querySelector(".containerTwo");

@@ -22,7 +22,7 @@ Provide instructions and examples for use. Include screenshots as needed.
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
     ```md
-    ![alt text](assets/images/code quiz ss.png)
+    ![ScreenShot](https://github.com/Christina2208/Code-Quiz/blob/main/assets/images/code%20quiz%20ss.png)
     ```
 
 ## Credits
